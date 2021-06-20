@@ -10,3 +10,8 @@ After restarting `SWEX`, the plugin should now be seen under `Settings`.
 Most plugins have checkboxes for further configuration, default setting being everything activated.
 
 Plugins that require additional setup have their own Readme.
+
+### Contact
+
+Discord: Diliskar#6828
+
