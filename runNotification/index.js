@@ -45,13 +45,13 @@ module.exports = {
 
     // Check if 10/10 runs done
 		if (req["auto_repeat"] == 10) {
-			sound.play(filePath);
+			this.playSound();
       sound = true;
 		}
 
     // Check for lose, except rift beasts
 		else if (req["win_lose"] != 1 && command !== "BattleRiftDungeonResult") {
-			sound.play(filePath);
+			this.playSound();
       sound = true;
 		}
 
@@ -75,7 +75,7 @@ module.exports = {
       }
 
       if (max) {
-        sound.play(filePath);
+        this.playSound();
         sound = true;
       }
 
@@ -159,4 +159,8 @@ module.exports = {
     }
 
   },
+
+  playSound() {
+    sound.play(filePath);
+  }
 };
